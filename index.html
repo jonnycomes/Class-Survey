@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Course Survey</title>
+</head>
+<body>
+    <h1 id="title">Course Survey</h1>
+    <main id="main">
+        <p id="description">Please tell us about your experience with the course. </p>
+        <form id="survey-form">
+            <label id="name-label" class="row">
+                <div class="left">
+                    <sup>*</sup>Name:
+                </div>
+                <div  class="right">
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required> 
+                </div>
+            </label>
+            <label id="email-label" class="row">
+                <div class="left">
+                    <sup>*</sup>Email:
+                </div>
+                <div  class="right">
+                    <input id="email" type="email" name="email" placeholder="Enter your email address" required> 
+                </div>
+            </label>
+            <label id="number-label" class="row">
+                <div class="left">
+                    Approximately how many hours per week did you spend on the course?
+                </div>
+                <div  class="right">
+                    <input id="number" type="number" placeholder="Hours" min="0" max="168" name="hours-per-week">
+                </div>
+            </label>
+            <label id="dropdown-label" class="row">
+                <div class="left">
+                    What was your class standing when the course started?
+                </div>
+                <div  class="right">
+                    <select id="dropdown" name="class">
+                        <option disabled selected value> -- select -- </option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select> 
+                </div>
+            </label>
+            <div class="row">
+                <div class="left">
+                    What grade do you think you deserve in this course?
+                </div>
+                <div id="deserved-labels" class="right">
+                    <label for="A"><input value="A" type="radio" name="deserved-grade"> A
+                    </label>
+                    <label for="B"><input value="B" type="radio" name="deserved-grade"> B
+                    </label>
+                    <label for="C"><input value="C" type="radio" name="deserved-grade"> C
+                    </label>
+                    <label for="D"><input value="D" type="radio" name="deserved-grade"> D
+                    </label>
+                    <label for="F"><input  value="F" type="radio" name="deserved-grade"> F
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    What grade do you expect to receive in this course?
+                </div>
+                <div id="expected-labels" class="right">
+                    <label for="A"><input value="A" type="radio" name="expected-grade"> A
+                    </label>
+                    <label for="B"><input value="B" type="radio" name="expected-grade"> B
+                    </label>
+                    <label for="C"><input value="C" type="radio" name="expected-grade"> C
+                    </label>
+                    <label for="D"><input value="D" type="radio" name="expected-grade"> D
+                    </label>
+                    <label for="F"><input  value="F" type="radio" name="expected-grade"> F
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    Which of the following aspects contributed significantly to your understanding of the course material? 
+                    <br>
+                    (Check all that apply)
+                </div>
+                <div id="useful-labels" class="right">
+                    <label for="lectures"><input value="lectures" type="checkbox" name="useful"> Class lectures
+                    </label>
+                    <br>
+                    <br>
+                    <label for="activities"><input value="activities" type="checkbox" name="useful"> In class activities
+                    </label>
+                    <br>
+                    <br>
+                    <label for="online-homework"><input value="online-homework" type="checkbox" name="useful"> Online homework assignments
+                    </label>
+                    <br>
+                    <br>
+                    <label for="paper-homework"><input value="paper-homework" type="checkbox" name="useful"> Paper homework assignments
+                    </label>
+                    <br>
+                    <br>
+                    <label for="book"><input value="book" type="checkbox" name="useful"> Textbook
+                    </label>
+                    <br>
+                    <br>
+                    <label for="webpage"><input value="webpage" type="checkbox" name="useful"> Course webpage
+                    </label>
+                </div>
+            </div>
+            <label id="changes-label" class="row">
+                <div class="left">
+                    What would you change about the course and why?
+                </div>
+                <div  class="right">
+                    <textarea class="comments" name="changes" placeholder="Type your response here."></textarea>
+                </div>
+            </label>
+            <label id="keeps-label" class="row">
+                <div class="left">
+                    What would you keep the same and why?
+                </div>
+                <div  class="right">
+                    <textarea class="comments" name="keepers" placeholder="Type your response here."></textarea>
+                </div>
+            </label>
+            <label id="comments-label" class="row">
+                <div class="left">
+                    Additional comments:
+                </div>
+                <div  class="right">
+                    <textarea class="comments" name="comments" placeholder="Type comments here."></textarea>
+                </div>
+            </label>
+            <div class="row">
+                <label id="submit-button">
+                    <button id="submit" type="submit">submit</button>
+                </label>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+<footer>
+    <p>page created by <a id="creater" href="https://www.freecodecamp.org/jonnycomes" target="_blank">Jonny Comes</a></p>
+</footer>
+</html>
